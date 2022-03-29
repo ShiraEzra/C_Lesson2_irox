@@ -2,10 +2,34 @@
 //
 
 #include <iostream>
+#include <string.h>
+#include "AllExercises.h"
+
+
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    //Ex 8
+    char str[] = "abc";
+    printf("\n\n Pointer : Generate permutations of a given string :\n");
+    printf("--------------------------------------------------------\n");
+    printf(" The permutations of the string are : \n");
+    allPermutations(str, 0, strlen(str)-1);
+    printf("\n\n");
+
+    //Ex 14
+    int arr[] = { 8,2,5,3,1,6 };
+    int arrLength = sizeof(arr) / sizeof(int);
+    sortArray(arr, arrLength);
+    printArr(arr, arrLength);
+
+    //Ex 17
+    printInReverseOrder(arr, arrLength, 1);
+
+    //Ex 22
+    int strLength = sizeof(str) / sizeof(char);
+    printInReverseOrder(str, strLength, 2);
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

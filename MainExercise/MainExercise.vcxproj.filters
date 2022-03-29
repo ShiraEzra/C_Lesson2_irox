@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lesson2.cpp">
+    <ClCompile Include="MainExercise.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AllExercises.cpp">
+    <ClCompile Include="DoubleBuffering.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AllExercises.h">
+    <ClInclude Include="DoubleBuffering.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

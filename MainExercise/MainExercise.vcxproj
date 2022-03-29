@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{81f207b4-d204-448e-9060-3410685e4913}</ProjectGuid>
-    <RootNamespace>Lesson2</RootNamespace>
+    <ProjectGuid>{fddc2997-e52b-4a1a-8ce7-091c15aa4eca}</ProjectGuid>
+    <RootNamespace>MainExercise</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AllExercises.cpp" />
-    <ClCompile Include="Lesson2.cpp" />
+    <ClCompile Include="DoubleBuffering.cpp" />
+    <ClCompile Include="MainExercise.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AllExercises.h" />
+    <ClInclude Include="DoubleBuffering.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
