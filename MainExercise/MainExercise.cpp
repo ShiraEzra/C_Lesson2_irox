@@ -3,14 +3,35 @@
 #include <iostream>
 #include <stdio.h>
 #include "DoubleBuffering.h"
+using namespace std;
 
 
 
-
-int main(void)
+int main()
 {
+	int* fillbuffer = new int[BUFSIZE];
+	int fillcnt = 0;
+	int* processbuffer = NULL;
+	int processcnt = 0;
+	int tcount = 0;
+	int i;
+	for( i=0; i < ITERATIONS; i++)
+	{
+		int* temp=NULL;
+		if (getProb() <= 0.40)
+		{
+			temp = generateData(fillbuffer, fillcnt);
+			if (temp != NULL)
+				processbuffer = temp;
+		}
+		if (getProb() <= 0.60)
+			processData(processbuffer, processcnt, tcount);
+		cout << fillcnt << '\t' << processcnt << endl;
+	}
+	cout << "Total value: " << tcount << endl;
+	cout << "Num iterations: " << i << endl;
 
-		return 0;
+	return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
